@@ -152,9 +152,6 @@ div {
 /* https://frontstuff.io/multi-colored-svg-symbol-icons-with-css-variables */
 
 .icon {
-  width: 100px;
-  height: 100px;
-  margin: 0 1rem;
   --icon-standard: slategrey;
   /* You could also define --handle-color etc. here instead of in the svg */
 }
