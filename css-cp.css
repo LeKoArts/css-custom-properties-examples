@@ -97,7 +97,7 @@ div {
 
 .special-button:before {
   --size: 0;
-  content: "";
+  content: '';
   position: absolute;
   left: var(--x);
   top: var(--y);
