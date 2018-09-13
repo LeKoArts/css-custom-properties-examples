@@ -8,9 +8,13 @@
   background: rgb(var(--color));
   border-radius: var(--br);
   padding: 0.5rem
-    calc(1 / var(--default-size) * 1rem * var(--big-size, var(--default-size))); /* Default margin: 1rem */
+    calc(
+      1 / var(--default-size) * 1rem * var(--custom-size, var(--default-size))
+    ); /* Default margin: 1rem */
   box-shadow: 0 5px 15px rgba(var(--color), 0.4);
-  font-size: calc(1px * var(--big-size, var(--default-size)));
+  font-size: calc(
+    1px * var(--custom-size, var(--default-size))
+  ); /* Default font-size: 18px */
 }
 
 .btn:hover {
@@ -28,7 +32,7 @@
 }
 
 .btn--big {
-  --big-size: 24; /* Aware of the DOM! */
+  --custom-size: 24; /* Aware of the DOM! */
 }
 
 /* Example 2 */
@@ -97,7 +101,7 @@ div {
 
 .special-button:before {
   --size: 0;
-  content: '';
+  content: "";
   position: absolute;
   left: var(--x);
   top: var(--y);
@@ -138,7 +142,7 @@ div {
 
 .item {
   animation: slide-left 0.3s both;
-  animation-delay: calc(var(--i) * 1s); /* --i gets increased by React */
+  animation-delay: calc(var(--i) * 1s); /* --i gets increased by Vue */
 }
 
 @keyframes slide-left {
