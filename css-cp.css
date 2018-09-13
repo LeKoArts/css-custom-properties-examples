@@ -4,17 +4,11 @@
 .btn {
   --color: 32, 178, 170; /* Choose RGB in order to use it with box-shadow */
   --br: 5px;
-  --default-size: 18;
   background: rgb(var(--color));
   border-radius: var(--br);
-  padding: 0.5rem
-    calc(
-      1 / var(--default-size) * 1rem * var(--custom-size, var(--default-size))
-    ); /* Default margin: 1rem */
+  padding: 0.5rem calc(1 / 18 * var(--custom-size, 18) * 1rem); /* Default margin: 1rem */
   box-shadow: 0 5px 15px rgba(var(--color), 0.4);
-  font-size: calc(
-    1px * var(--custom-size, var(--default-size))
-  ); /* Default font-size: 18px */
+  font-size: calc(var(--custom-size, 18) * 1px); /* Default font-size: 18px */
 }
 
 .btn:hover {
