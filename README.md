@@ -1,6 +1,6 @@
 # Example page on my talk about CSS Custom Properties
 
-This repository contains the slides to my talk (`talk_slides.pdf`) and the shown example page.
+The slides for this talk can be found in my [talks repository](https://github.com/LekoArts/talks/tree/master/css-custom-properties-intro).
 
 ## Get started
 
